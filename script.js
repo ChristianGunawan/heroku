@@ -3,6 +3,8 @@ const app = express();
 
 app.listen(process.env.PORT || 5000);
 
+app.get("/", function(req,res){
+
 kataPenting = ['kuis', 'ujian', 'tucil', 'tubes', 'praktikum'];
 
 task = {};
@@ -463,3 +465,5 @@ function showMessage(messageToShow){
     $(".form").append($msg);
     $("#data").val('');
 }
+
+});
